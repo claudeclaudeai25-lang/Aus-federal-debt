@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Australian Government receipts, payments and gross debt</title>
+<meta name="description" content="Australian Government general government sector receipts, payments and gross debt, 1996–97 to 2025–26, from the Final Budget Outcome historical tables.">
+<style>
+  :root { --ink:#1d2330; --muted:#5b6475; --line:#e3e6ec; --bg:#fafbfc; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif; color:var(--ink); background:var(--bg); }
+  main { max-width:1100px; margin:0 auto; padding:32px 20px 56px; }
+  h1 { font-size:1.6rem; line-height:1.25; margin:0 0 6px; }
+  h2 { font-size:1.15rem; margin:36px 0 10px; }
+  .sub { color:var(--muted); margin:0 0 20px; }
+  .toggle { display:flex; gap:0; margin:0 0 10px; }
+  .toggle button { font:inherit; font-size:.9rem; padding:6px 14px; border:1px solid #c8ced8; background:#fff; cursor:pointer; color:var(--ink); }
+  .toggle button:first-child { border-radius:6px 0 0 6px; }
+  .toggle button:last-child { border-radius:0 6px 6px 0; border-left:none; }
+  .toggle button[aria-pressed="true"] { background:#1d2330; color:#fff; border-color:#1d2330; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:10px; padding:12px; }
+  table { width:100%; border-collapse:collapse; background:#fff; font-size:.92rem; font-variant-numeric:tabular-nums; }
+  th, td { padding:7px 12px; border-bottom:1px solid var(--line); text-align:right; white-space:nowrap; }
+  th:first-child, td:first-child { text-align:left; }
+  th { background:#f3f5f8; font-weight:600; position:sticky; top:0; }
+  .neg { color:#b00020; } .pos { color:#1b7a3a; }
+  .table-wrap { max-height:420px; overflow:auto; border:1px solid var(--line); border-radius:10px; }
+  ul { padding-left:20px; } li { margin:6px 0; }
+  a { color:#1f5fbf; }
+  footer { margin-top:36px; color:var(--muted); font-size:.85rem; }
+  @media (max-width:600px) {
+    main { padding:20px 12px 40px; } h1 { font-size:1.3rem; }
+    table { font-size:.8rem; } th, td { padding:6px 6px; } .card { padding:4px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Australian Government receipts, payments and gross debt</h1>
+  <p class="sub">General government sector, 1996–97 to 2025–26, in nominal dollars.
+  Lines show annual flows (left axis); bars show gross debt at the end of each year (right axis).
+  Source: Final Budget Outcome 2025–26, Appendix B. Page last rebuilt 22 November 2026.</p>
+
+  <div class="toggle" role="group" aria-label="Accounting basis">
+    <button type="button" data-basis="cash" aria-pressed="true">Cash: receipts and payments</button>
+    <button type="button" data-basis="accrual" aria-pressed="false">Accrual: revenue and expenses</button>
+  </div>
+  <div class="card"><div style="height:640px; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="95fc3d0d-e317-41be-b2ef-22d5e07519a3" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("95fc3d0d-e317-41be-b2ef-22d5e07519a3")) {                    Plotly.newPlot(                        "95fc3d0d-e317-41be-b2ef-22d5e07519a3",                        [{"hovertemplate":"Gross debt: $%{y:,.1f}b\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"rgba(150, 160, 175, 0.40)"},"name":"Gross debt (AGS on issue)","x":["1996-97","1997-98","1998-99","1999-00","2000-01","2001-02","2002-03","2003-04","2004-05","2005-06","2006-07","2007-08","2008-09","2009-10","2010-11","2011-12","2012-13","2013-14","2014-15","2015-16","2016-17","2017-18","2018-19","2019-20","2020-21","2021-22","2022-23","2023-24","2024-25","2025-26"],"y":{"dtype":"f8","bdata":"PzVeuknEW0DRItv5fmpXQHe+nxovVVVA\u002fKnx0k3iUkBvEoPAyplQQI2XbhKDgE9ASOF6FK63TEAAAAAAAGBLQBfZzvdTk0tAKVyPwvUIS0BvEoPAyqFKQH9qvHSTuEtAxSCwcmhJWUDHSzeJQWRiQNNNYhBY6WdArBxaZDs\u002fbUA1XrpJDBZwQG8Sg8DK93NAK4cW2c4Ld0AfhetRuEZ6QIts5\u002fupT39A0SLb+X6fgEAOLbKd7++AQKrx0k1iYoVAsHJoke2HiUAbL90kBvqLQLgehetRzotAjZduEoNXjEAnMQisHAWNQH9qvHSTW45A"},"yaxis":"y2","type":"bar"},{"hovertemplate":"Receipts (cash): $%{y:,.1f}b\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#0066cc","width":2.5},"marker":{"size":5},"mode":"lines+markers","name":"Receipts (cash)","visible":true,"x":["1996-97","1997-98","1998-99","1999-00","2000-01","2001-02","2002-03","2003-04","2004-05","2005-06","2006-07","2007-08","2008-09","2009-10","2010-11","2011-12","2012-13","2013-14","2014-15","2015-16","2016-17","2017-18","2018-19","2019-20","2020-21","2021-22","2022-23","2023-24","2024-25","2025-26"],"y":{"dtype":"f8","bdata":"bef7qfGyYEBkO99PjZdhQLx0kxgEAmNA7nw\u002fNV7GZEAdWmQ7399mQIlBYOXQcmdAVg4tsp2TaUDNzMzMzDhrQHNoke18f21AGQRWDi3+b0DVeOkmMQpxQOkmMQisbnJAmpmZmZlJckA730+Nl8pxQKrx0k1i4HJARIts5\u002fuddEBGtvP91PB1QP7UeOkmhXZAiUFg5dCkd0AQWDm0yC54QNnO91PjnXlAFK5H4Xrue0B\u002farx0k1R+QO58PzVeVn1A\u002fKnx0k0\u002fgEC+nxov3UKCQIlBYOXQS4RASOF6FK6EhUD4U+Olm2eGQL6fGi\u002fd4odA"},"type":"scatter"},{"hovertemplate":"Payments (cash): $%{y:,.1f}b\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#cc0000","width":2.5},"marker":{"size":5},"mode":"lines+markers","name":"Payments (cash)","visible":true,"x":["1996-97","1997-98","1998-99","1999-00","2000-01","2001-02","2002-03","2003-04","2004-05","2005-06","2006-07","2007-08","2008-09","2009-10","2010-11","2011-12","2012-13","2013-14","2014-15","2015-16","2016-17","2017-18","2018-19","2019-20","2020-21","2021-22","2022-23","2023-24","2024-25","2025-26"],"y":{"dtype":"f8","bdata":"NV66SQx2YUAQWDm0yJJhQJqZmZmZhWJAoBov3SQmY0AOLbKd7yNmQClcj8L1lGdAsp3vp8anaECF61G4HjlqQBsv3SQGzWtAMQisHFoEbkCDwMqhRapvQHNoke18\u002fXBA2\u002fl+arzAc0BmZmZmZg51QBKDwMqhoXVAjZduEoMwd0AlBoGVQ\u002fN2QHsUrkfhZnlAJQaBlUPBeUBoke18P3V6QAAAAAAAdntAHVpkO99LfEAhsHJokeF9QFCNl24SLYFA6SYxCKxwhEDD9Shcj0KDQPyp8dJNm4NAnMQgsHIGhUBKDAIrh7eGQDeJQWDllIhA"},"type":"scatter"},{"hovertemplate":"Revenue (accrual): $%{y:,.1f}b\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#0066cc","width":2.5},"marker":{"size":5},"mode":"lines+markers","name":"Revenue (accrual)","visible":false,"x":["1996-97","1997-98","1998-99","1999-00","2000-01","2001-02","2002-03","2003-04","2004-05","2005-06","2006-07","2007-08","2008-09","2009-10","2010-11","2011-12","2012-13","2013-14","2014-15","2015-16","2016-17","2017-18","2018-19","2019-20","2020-21","2021-22","2022-23","2023-24","2024-25","2025-26"],"y":{"dtype":"f8","bdata":"vHSTGAS2YUAK16NwPVpiQAisHFpkA2NAfT81XrrpZEAIrBxaZENnQOf7qfHSzWdAN4lBYOXYaUDTTWIQWMFrQBfZzvdTS25AyXa+nxpJcEC4HoXrUV5xQN9PjZdu9nJA46WbxCCockDVeOkmMUZyQCUGgZVDU3NAd76fGi8VdUAOLbKd73d2QCPb+X5qYndA4XoUrke3d0B7FK5H4bB4QCGwcmiR+3lAFK5H4XqEfECoxks3idV+QJzEILByZH5Aarx0kxhYgECR7Xw\u002fNaOCQCcxCKwc44RAGy\u002fdJAYEhkCuR+F6FOiGQFg5tMh2SohA"},"type":"scatter"},{"hovertemplate":"Expenses (accrual): $%{y:,.1f}b\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#cc0000","width":2.5},"marker":{"size":5},"mode":"lines+markers","name":"Expenses (accrual)","visible":false,"x":["1996-97","1997-98","1998-99","1999-00","2000-01","2001-02","2002-03","2003-04","2004-05","2005-06","2006-07","2007-08","2008-09","2009-10","2010-11","2011-12","2012-13","2013-14","2014-15","2015-16","2016-17","2017-18","2018-19","2019-20","2020-21","2021-22","2022-23","2023-24","2024-25","2025-26"],"y":{"dtype":"f8","bdata":"rkfhehQ+YkDwp8ZLN5liQJqZmZmZXWJAnu+nxkt3Y0C+nxov3YhmQAIrhxbZJmhAvp8aL90saUA\u002fNV66SfRqQIts5\u002fuprWxAJQaBlUM\u002fbkD+1HjpJjNwQI\u002fC9ShchXFATmIQWDlOdECLbOf7qUV1QI\u002fC9ShcS3ZAukkMAiufd0BWDi2ynfV3QJMYBFYO+3lAnu+nxksvekDn+6nx0ut6QAisHFpkG3xApHA9CtfXfECWQ4ts511+QA4tsp3vEIJAF9nO91NfhEBmZmZmZniDQDMzMzMz6INAYOXQIttuhUAhsHJokRCIQA4tsp3vYIlA"},"type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"hoverlabel":{"namelength":-1},"font":{"family":"system-ui, -apple-system, Segoe UI, sans-serif"},"legend":{"orientation":"h","yanchor":"bottom","y":1.02,"x":0},"yaxis":{"title":{"text":"Annual flows ($ billion)"},"gridcolor":"#e5e5e5","rangemode":"tozero"},"yaxis2":{"title":{"text":"Gross debt, end of year ($ billion)","font":{"color":"#777"}},"tickfont":{"color":"#777"},"overlaying":"y","side":"right","showgrid":false,"tickmode":"linear","tick0":0,"dtick":200,"range":[0,1200.0]},"xaxis":{"rangeslider":{"visible":true,"thickness":0.06},"type":"category","tickangle":-45},"margin":{"l":60,"r":60,"t":70,"b":40},"hovermode":"x unified","height":640},                        {"responsive": true, "displaylogo": false}                    )                };            </script>        </div></div>
+  <script>
+    document.querySelectorAll(".toggle button").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var cash = btn.dataset.basis === "cash";
+        var gd = document.querySelector(".plotly-graph-div");
+        Plotly.restyle(gd, {visible: [true, cash, cash, !cash, !cash]});
+        document.querySelectorAll(".toggle button").forEach(function (b) {
+          b.setAttribute("aria-pressed", String(b === btn));
+        });
+      });
+    });
+  </script>
+
+  <h2>The figures ($ billion)</h2>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Year</th><th>Receipts</th><th>Payments</th><th>Balance</th><th>Gross debt</th></tr></thead>
+    <tbody>
+<tr><td>2025–26</td><td>764.4</td><td>786.6</td><td class="neg">-22.3</td><td>971.4</td></tr>
+<tr><td>2024–25</td><td>717.0</td><td>726.9</td><td class="neg">-10.0</td><td>928.6</td></tr>
+<tr><td>2023–24</td><td>688.6</td><td>672.8</td><td class="pos">+15.8</td><td>906.9</td></tr>
+<tr><td>2022–23</td><td>649.5</td><td>627.4</td><td class="pos">+22.1</td><td>889.8</td></tr>
+<tr><td>2021–22</td><td>584.4</td><td>616.3</td><td class="neg">-32.0</td><td>895.3</td></tr>
+<tr><td>2020–21</td><td>519.9</td><td>654.1</td><td class="neg">-134.2</td><td>817.0</td></tr>
+<tr><td>2019–20</td><td>469.4</td><td>549.6</td><td class="neg">-80.2</td><td>684.3</td></tr>
+<tr><td>2018–19</td><td>485.3</td><td>478.1</td><td class="pos">+7.2</td><td>542.0</td></tr>
+<tr><td>2017–18</td><td>446.9</td><td>452.7</td><td class="neg">-5.8</td><td>531.9</td></tr>
+<tr><td>2016–17</td><td>409.9</td><td>439.4</td><td class="neg">-29.5</td><td>501.0</td></tr>
+<tr><td>2015–16</td><td>386.9</td><td>423.3</td><td class="neg">-36.4</td><td>420.4</td></tr>
+<tr><td>2014–15</td><td>378.3</td><td>412.1</td><td class="neg">-33.8</td><td>368.7</td></tr>
+<tr><td>2013–14</td><td>360.3</td><td>406.4</td><td class="neg">-46.1</td><td>319.5</td></tr>
+<tr><td>2012–13</td><td>351.1</td><td>367.2</td><td class="neg">-16.2</td><td>257.4</td></tr>
+<tr><td>2011–12</td><td>329.9</td><td>371.0</td><td class="neg">-41.2</td><td>234.0</td></tr>
+<tr><td>2010–11</td><td>302.0</td><td>346.1</td><td class="neg">-44.1</td><td>191.3</td></tr>
+<tr><td>2009–10</td><td>284.7</td><td>336.9</td><td class="neg">-52.2</td><td>147.1</td></tr>
+<tr><td>2008–09</td><td>292.6</td><td>316.0</td><td class="neg">-23.4</td><td>101.1</td></tr>
+<tr><td>2007–08</td><td>294.9</td><td>271.8</td><td class="pos">+23.1</td><td>55.4</td></tr>
+<tr><td>2006–07</td><td>272.6</td><td>253.3</td><td class="pos">+19.3</td><td>53.3</td></tr>
+<tr><td>2005–06</td><td>255.9</td><td>240.1</td><td class="pos">+15.8</td><td>54.1</td></tr>
+<tr><td>2004–05</td><td>236.0</td><td>222.4</td><td class="pos">+13.6</td><td>55.2</td></tr>
+<tr><td>2003–04</td><td>217.8</td><td>209.8</td><td class="pos">+8.0</td><td>54.8</td></tr>
+<tr><td>2002–03</td><td>204.6</td><td>197.2</td><td class="pos">+7.4</td><td>57.4</td></tr>
+<tr><td>2001–02</td><td>187.6</td><td>188.7</td><td class="neg">-1.1</td><td>63.0</td></tr>
+<tr><td>2000–01</td><td>183.0</td><td>177.1</td><td class="pos">+5.9</td><td>66.4</td></tr>
+<tr><td>1999–00</td><td>166.2</td><td>153.2</td><td class="pos">+13.0</td><td>75.5</td></tr>
+<tr><td>1998–99</td><td>152.1</td><td>148.2</td><td class="pos">+3.9</td><td>85.3</td></tr>
+<tr><td>1997–98</td><td>140.7</td><td>140.6</td><td class="pos">+0.1</td><td>93.7</td></tr>
+<tr><td>1996–97</td><td>133.6</td><td>139.7</td><td class="neg">-6.1</td><td>111.1</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>Notes on the data</h2>
+  <ul>
+    <li><strong>Cash view (default):</strong> receipts and payments of the Australian
+    Government general government sector, the basis of the headline underlying cash
+    balance. The table's balance column is receipts less payments, which equals the underlying cash balance except between
+    2005–06 and 2019–20, when net Future Fund earnings are also deducted.</li>
+    <li><strong>Accrual view:</strong> revenue and expenses, recorded when earned or
+    incurred rather than when cash changes hands. The difference is the net operating
+    balance. Accrual data begin in 1996–97.</li>
+    <li><strong>Gross debt</strong> is the face value of Australian Government Securities
+    (AGS) on issue at 30 June, including a small amount held on behalf of the states and
+    the Northern Territory. Net debt, which deducts financial assets, is lower and is not
+    shown.</li>
+    <li>Treasury revises the historical series in each edition to improve comparability
+    over time (for example for accounting classification changes), so figures can differ
+    slightly from those first published for a year.</li>
+    <li>All values are nominal, not adjusted for inflation or the size of the economy.</li>
+    
+  </ul>
+
+  <h2>Sources</h2>
+  <ul>
+    <li>Australian Government, <a href="https://budget.gov.au/">budget.gov.au</a>:
+    Final Budget Outcome, Appendix B, Historical Australian Government Data
+    (Tables B.1, B.5 and B.6), and Budget Paper No. 1, Historical Australian Government Data.</li>
+  </ul>
+
+  <footer>Data © Commonwealth of Australia, used under CC BY 4.0. Charting and
+  calculations are our own and are not endorsed by the Australian Government.
+  Checked monthly for a new Final Budget Outcome.</footer>
+</main>
+</body>
+</html>
